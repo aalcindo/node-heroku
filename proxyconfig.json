@@ -1,0 +1,36 @@
+
+{
+  "/api/*": {
+        "target": "http://localhost:5000",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    
+    },
+    "/foo": {
+        "target": "https://jsonplaceholder.typicode.com/posts",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+           "^/foo": ""
+        }
+    
+    },
+    "/url/*": {
+        "target": "http://localhost:5000",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    
+    },
+    "/questions/*": {
+        "target": "http://localhost:5000",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    
+    }
+}
+
+
